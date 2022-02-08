@@ -1,4 +1,4 @@
-body {
+html {
   background-image: url(../img/mount-si.png);
   background-color: #7851A9;
 }
@@ -31,9 +31,20 @@ main {
   height: 550px;
 }
 footer {
-  padding-top: 50%;
+  margin-top: 40%;
+  background-color: #c79222;
 }
 img {
   margin-left: 90px;
   border: solid 5px #7851A9;
+}
+#question-button {
+text-align: center;
+    height: 400px;
+    width: 400px;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 40%;
+    background-color: #7851A9;
+    border-radius: 50%;
 }
