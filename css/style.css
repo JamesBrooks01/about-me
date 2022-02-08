@@ -1,0 +1,39 @@
+body {
+  background-image: url(../img/mount-si.png);
+  background-color: #7851A9;
+}
+p {
+  color: #c79222;
+  font-size: 24px;
+  margin: 1px;
+}
+h1 {
+  color: #81A851;
+  font-size: 36px;
+  text-align: center;
+}
+header {
+  margin-bottom: 20px;
+}
+main {
+  margin: 1px;
+}
+#hogarth {
+  width: 500px;
+  height: 700px;
+}
+#snape {
+  width: 500px;
+  height: 700px;
+}
+#weasley{
+  width: 500px;
+  height: 550px;
+}
+footer {
+  padding-top: 50%;
+}
+img {
+  margin-left: 90px;
+  border: solid 5px #7851A9;
+}
