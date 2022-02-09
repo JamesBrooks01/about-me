@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 // Answer Key
 //
 //Question 1: 'Am I 20 years old' 'yes'
@@ -6,6 +6,19 @@
 //Question 3: 'Did I graduate in spring 2019?' 'no'
 //Question 4: 'I took Code 102 immedietly after Code 101' 'no'
 //Question 5: 'I wish to live a quiet life' 'yes'
+let counter = 0
+let userName = prompt('Who visits my site?')
+
+function greeting() {
+  if (userName === null || userName === '') {
+    userName = prompt('Who visits my site?')
+    greeting()
+  return
+}
+else {
+  console.log(`Welcome to the site ${userName}, enjoy the pictures!`)
+}
+}
 function question1() {
   let answer1 = prompt('Am I 20 years old?');
   if (answer1 === null || answer1 === '') {
@@ -16,6 +29,7 @@ function question1() {
   if (answer1 === 'yes' || answer1 === 'y') {
     // alert('Correct');
     console.log('Question 1 Correct')
+    counter = counter + 1
   } else if (answer1 === 'no' || answer1 === 'n') {
     // alert('Incorrect');
     console.log('Question 1 Incorrect')
@@ -39,6 +53,7 @@ function question2() {
   } else if (answer2 === 'no' || answer2 === 'n') {
     // alert('Correct');
     console.log('Question 2 Correct')
+    counter = counter + 1
   }
   else {
     console.log('Please enter a valid answer')
@@ -58,6 +73,7 @@ function question3() {
   } else if (answer3 === 'no' || answer3 === 'n') {
     // alert('Incorrect');
     console.log('Question 3 Correct')
+    counter = counter + 1
   }
   else {
     console.log('Please enter a valid answer')
@@ -77,6 +93,7 @@ function question4() {
   } else if (answer4 === 'no' || answer4 === 'n') {
     // alert('Correct');
     console.log('Question 4 Correct')
+    counter = counter + 1
   }
   else {
     console.log('Please enter a valid answer')
@@ -93,6 +110,7 @@ function question5() {
   if (answer5 === 'yes' || answer5 === 'n') {
     // alert('Correct');
     console.log('Question 5 Correct')
+    counter = counter + 1
   } else if (answer5 === 'no') {
     // alert('Incorrect');
     console.log('Question 5 Incorrect')
@@ -102,8 +120,16 @@ function question5() {
     question5()
   }
 }
-question1()
-question2()
-question3()
-question4()
-question5()
+function questionButton() {
+  question1()
+  question2()
+  question3()
+  question4()
+  question5()
+  console.log('Number of Correct Answers ' + counter)
+  endResponse()
+}
+function endResponse() {
+  console.log(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 5 correct.`)
+}
+greeting()
