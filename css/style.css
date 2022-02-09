@@ -31,8 +31,9 @@ main {
   height: 550px;
 }
 footer {
-  margin-top: 40%;
+  margin-top: 35%;
   background-color: #c79222;
+  text-align: center;
 }
 img {
   margin-left: 90px;
