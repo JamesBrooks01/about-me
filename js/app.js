@@ -12,7 +12,7 @@ let userName = prompt('Who visits my site?')
 function greeting() {
   if (userName === null || userName === '') {
     userName = prompt('Who visits my site?')
-    greeting()
+    greeting();
     return
   }
   else {
@@ -36,8 +36,9 @@ function question1() {
     //console.log('Question 1 Incorrect')
   }
   else {
-    console.log('Please enter a valid answer')
-    question1()
+    alert('Please enter a valid answer');
+    //console.log('Please enter a valid answer')
+    question1();
     return
   }
 }
@@ -57,8 +58,9 @@ function question2() {
     counter = counter + 1
   }
   else {
-    console.log('Please enter a valid answer')
-    question2()
+    alert('Please enter a valid answer');
+    //console.log('Please enter a valid answer')
+    question2();
   }
 }
 function question3() {
@@ -77,8 +79,9 @@ function question3() {
     counter = counter + 1
   }
   else {
-    console.log('Please enter a valid answer')
-    question3()
+    alert('Please enter a valid answer');
+    //console.log('Please enter a valid answer')
+    question3();
   }
 }
 function question4() {
@@ -97,8 +100,9 @@ function question4() {
     counter = counter + 1
   }
   else {
-    console.log('Please enter a valid answer')
-    question4()
+    alert('Please enter a valid answer');
+    //console.log('Please enter a valid answer')
+    question4();
   }
 }
 function question5() {
@@ -117,8 +121,9 @@ function question5() {
     //console.log('Question 5 Incorrect')
   }
   else {
-    console.log('Please enter a valid answer')
-    question5()
+    alert('Please enter a valid answer');
+    //console.log('Please enter a valid answer')
+    question5();
   }
 }
 function questionButton() {
@@ -130,7 +135,7 @@ function questionButton() {
   question3()
   question4()
   question5()
-  console.log('Number of Correct Answers ' + counter)
+  //console.log('Number of Correct Answers ' + counter)
   endResponse()
 }
 function endResponse() {
