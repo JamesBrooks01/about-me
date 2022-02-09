@@ -122,6 +122,9 @@ function question5() {
   }
 }
 function questionButton() {
+  if (counter >= 5) {
+    counter = 0
+  }
   question1()
   question2()
   question3()
