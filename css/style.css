@@ -1,51 +1,57 @@
-html {
+body {
   background-image: url(../img/mount-si.png);
   background-color: #7851A9;
+  width: fit-content;
+  height: auto;
+  background-size: cover;
 }
 p {
   color: #c79222;
-  font-size: 24px;
+  font-size: 2vh;
   margin: 1px;
 }
 h1 {
   color: #81A851;
-  font-size: 36px;
+  font-size: 4vh;
   text-align: center;
 }
 header {
-  margin-bottom: 20px;
+  margin-bottom: 1vh;
 }
 main {
   margin: 1px;
 }
 #hogarth {
-  width: 500px;
-  height: 700px;
+  max-width: 10%;
+  max-height: 10%;
 }
 #snape {
-  width: 500px;
-  height: 700px;
+  max-width: 10%;
+  max-height: 10%;
 }
 #weasley{
-  width: 500px;
-  height: 550px;
+  max-width: 10%;
+  max-height: 10%;
 }
 footer {
-  margin-top: 35%;
+  margin-top: 50vh;
+  position: absolute;
+  bottom: 0;
   background-color: #c79222;
   text-align: center;
 }
 img {
-  margin-left: 90px;
+  margin-left: 1vh;
   border: solid 5px #7851A9;
 }
 #question-button {
-text-align: center;
-    height: 400px;
-    width: 400px;
-    font-size: 24px;
+    text-align: center;
+    height: 20vh;
+    width: 20vh;
+    font-size: 1.5vh;
     margin-top: 5px;
     margin-left: 40%;
     background-color: #7851A9;
     border-radius: 50%;
+
 }
