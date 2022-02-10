@@ -91,7 +91,7 @@ else {
 }
 }
 
-function timingQuestio() {
+function timingQuestion() {
 let answer4 = prompt('Did I take Code 102 immediately after Code 101?');
 if (answer4 === null || answer4 === '') {
   timingQuestion();
