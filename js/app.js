@@ -179,7 +179,7 @@ else {
 }
 }
 
-function petQuestio() {
+function petQuestion() {
 let guesses = 6;
 let answeredCorrectly = false;
 
