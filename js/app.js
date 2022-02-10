@@ -113,7 +113,7 @@ else {
 }
 }
 
-function lifeQuestio() {
+function lifeQuestion() {
 let answer5 = prompt('Do I want to live a quiet life?');
 if (answer5 === null || answer5 === '') {
   lifeQuestion();
