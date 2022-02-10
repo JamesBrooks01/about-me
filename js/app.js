@@ -8,6 +8,9 @@
 //Question 5: 'I wish to live a quiet life' 'yes'
 let counter = 0;
 let userName = prompt('Who visits my site?');
+let correctAnswer = 8675;
+let question7Answers = ['Weasley', 'Snape', 'Hogarth'];
+let chances = 0;
 
 function greeting() {
   if (userName === null || userName === '') {
@@ -126,21 +129,85 @@ function question5() {
     question5();
   }
 }
+function question6() {
+  let answer6 = prompt('What number am I thinking of?');
+  if (answer6 === null || answer6 === '') {
+    question6();
+    return;
+  }
+  answer6 = +answer6;
+  while (answer6 !== correctAnswer) {
+    if (answer6 > correctAnswer) {
+      alert('Guess Lower');
+      chances++;
+      console.log(chances);
+      if (chances > 3) {
+        break;
+      }
+      question6();
+      return;
+    } else if (answer6 < correctAnswer) {
+      alert('Guess Higher');
+      chances++;
+      console.log(chances);
+      if (chances > 3) {
+        break;
+      }
+      question6();
+      return;
+    } else {
+      alert('Please enter a valid answer');
+      //console.log('Please enter a valid answer')
+      question6();
+      return;
+    }
+  }
+  if (answer6 === correctAnswer) {
+    alert('You are Correct');
+    counter++;
+    chances = 0;
+  }
+  else {
+    alert('You have run out of guesses, The correct answer was 8675');
+    chances = 0;
+  }
+}
+function question7() {
+  let guesses = 6;
+  let answeredCorrectly = false;
+
+  while (guesses && !answeredCorrectly){
+    let guess = prompt('What is the name of one of my pets?');
+    guesses--;
+    if (guess === question7Answers[0] || guess === question7Answers[1] || guess === question7Answers[2]){
+      answeredCorrectly = true;
+      counter++;
+    } else {
+      console.log('Try Again');
+    }
+    if (guesses === 0){
+      alert(`You have run out of guesses, the three possible answers were,  ${question7Answers[0]}, ${question7Answers[1]}, or ${question7Answers[2]}`);
+    }
+  }
+}
 // eslint-disable-next-line no-unused-vars
 function questionButton() {
-  if (counter >= 5) {
+  if (counter >= 7) {
     counter = 0;
   }
+  chances = 0;
   question1();
   question2();
   question3();
   question4();
   question5();
+  question6();
+  question7();
   //console.log('Number of Correct Answers ' + counter)
   endResponse();
 }
 function endResponse() {
-  alert(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 5 correct.`);
+  alert(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 7 correct.`);
   //console.log(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 5 correct.`)
 }
 greeting();
