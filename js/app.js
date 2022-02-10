@@ -126,6 +126,7 @@ function question5() {
     question5();
   }
 }
+// eslint-disable-next-line no-unused-vars
 function questionButton() {
   if (counter >= 5) {
     counter = 0;
@@ -142,4 +143,4 @@ function endResponse() {
   alert(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 5 correct.`);
   //console.log(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 5 correct.`)
 }
-//greeting();
+greeting();
