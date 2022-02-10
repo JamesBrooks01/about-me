@@ -190,22 +190,14 @@ while (guesses && !answeredCorrectly) {
 }
 
 // eslint-disable-next-line no-unused-vars
-function questionButton() {
-  if (counter >= 7) {
-    counter = 0;
-  }
-  chances = 0;
-  question1();
-  question2();
-  question3();
-  question4();
-  question5();
-  question6();
-  question7();
-  //console.log('Number of Correct Answers ' + counter)
-  endResponse();
+
+if (counter >= 7) {
+  counter = 0;
 }
-function endResponse() {
-  alert(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 7 correct.`);
-  //console.log(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 5 correct.`)
-}
+chances = 0;
+
+//console.log('Number of Correct Answers ' + counter)
+
+
+alert(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 7 correct.`);
+//console.log(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 5 correct.`)
