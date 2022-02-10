@@ -212,4 +212,3 @@ function endResponse() {
   //console.log(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 5 correct.`)
 }
 greeting();
-question7();
