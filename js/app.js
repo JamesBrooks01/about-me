@@ -135,7 +135,7 @@ else {
 }
 }
 
-function numberQuestio () {
+function numberQuestion () {
 let answer6 = prompt('What number am I thinking of?');
 if (answer6 === null || answer6 === '') {
   numberQuestion();
