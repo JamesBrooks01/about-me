@@ -45,13 +45,47 @@ img {
   border: solid 5px #7851A9;
 }
 #question-button {
-    text-align: center;
-    height: 20vh;
-    width: 20vh;
-    font-size: 1.5vh;
-    margin-top: 5px;
-    margin-left: 40%;
-    background-color: #7851A9;
-    border-radius: 50%;
+  text-align: center;
+  height: 20vh;
+  width: 20vh;
+  font-size: 1.5vh;
+  margin-top: 3vh;
+  margin-left: 3vh;
+  background-color: #7851A9;
+  border-radius: 50%;
 
+}
+#Top-10-List {
+  text-align: left;
+  font-size: 2vh;
+  color: black;
+  margin-bottom: 1vh;
+}
+ol {
+  background-color: transparent;
+  text-align: left;
+  font-size: 2vh;
+  color: black;
+  float: left;
+  margin-left: 3vh;
+  list-style: decimal;
+}
+#Work-Education {
+  margin-top: 0vh;
+  margin-left: 0vh;
+  background-color: #7851A9;
+  color: #c79222;
+  font-size: 2vh;
+  list-style: square;
+  display: inline-block;
+  list-style-position: inside;
+}
+ul {
+  background-color: #7851A9;
+  color: #c79222;
+  font-size: 2vh;
+  list-style: square;
+  display: inline-block;
+  margin-left: 2vh;
+  list-style-position: inside;
 }
