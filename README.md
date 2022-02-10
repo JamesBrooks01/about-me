@@ -15,7 +15,12 @@ Each prompt is capable of accepting any answer, be it;
 - `null`
 - `undefined`
 
-Author: James Brooks
+**Author: James Brooks**
+
+**Pair Programmed with: Katrina Hill**
+
+- **Driver: Katrina Hill**
+- **Navigator: James Brooks**
 
 Reflections and Comments<br>
 
