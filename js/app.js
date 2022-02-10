@@ -69,7 +69,7 @@ else {
 }
 }
 
-function gradQuestio() {
+function gradQuestion() {
 let answer3 = prompt('Did I graduate in the spring of 2019?');
 if (answer3 === null || answer3 === '') {
   gradQuestion();
