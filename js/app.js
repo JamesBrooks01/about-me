@@ -9,7 +9,7 @@
 let counter = 0;
 let userName = prompt('Who visits my site?');
 let correctAnswer = 8675;
-let question7Answers = ['Weasley', 'Snape', 'Hogarth'];
+let question7Answers = ['weasley', 'snape', 'hogarth'];
 let chances = 0;
 
 function greeting() {
@@ -140,7 +140,7 @@ function question6() {
     if (answer6 > correctAnswer) {
       alert('Guess Lower');
       chances++;
-      console.log(chances);
+      //console.log(chances);
       if (chances > 3) {
         break;
       }
@@ -149,7 +149,7 @@ function question6() {
     } else if (answer6 < correctAnswer) {
       alert('Guess Higher');
       chances++;
-      console.log(chances);
+      //console.log(chances);
       if (chances > 3) {
         break;
       }
@@ -178,12 +178,13 @@ function question7() {
 
   while (guesses && !answeredCorrectly){
     let guess = prompt('What is the name of one of my pets?');
+    guess = guess.toLowerCase();
     guesses--;
     if (guess === question7Answers[0] || guess === question7Answers[1] || guess === question7Answers[2]){
       answeredCorrectly = true;
       counter++;
     } else {
-      console.log('Try Again');
+      alert('Try Again');
     }
     if (guesses === 0){
       alert(`You have run out of guesses, the three possible answers were,  ${question7Answers[0]}, ${question7Answers[1]}, or ${question7Answers[2]}`);
@@ -211,3 +212,4 @@ function endResponse() {
   //console.log(`Thank you for playing my game ${userName}, It was fun. By the way you got ${counter} out of 5 correct.`)
 }
 greeting();
+question7();
