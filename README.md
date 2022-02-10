@@ -27,4 +27,13 @@ Submission Questions
   - I don't really have any. I understand the material quite well so far and everything seems to be going smoothly.
 - How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
   - It took me about 3 hours to complete this assignment with another half hour for finishing touches. Before I started, I thought it would probably take me about 2 hours to do, but I knew that once I got into doing it I would find ways I wanted to improve and optimize the code until I would be satisfied, so a 3.5 hour time was within my expectations.
-  
+
+## LAB - 03
+
+### About Me, With Guessing Game: Extended
+
+---
+
+After some updates, the website now features a list of my top 10 favorite movies as well as my work experience and education organized in a neat list. It also has two new questions to ask, one where you guess a number within 4 tries, and one where you have to guess the name of one of my pets within 6 tries.
+
+Both new questions should still be capable of accepting any answer given and be able to respond to it.
