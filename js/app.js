@@ -24,7 +24,7 @@ else {
 }
 }
 
-function ageQuestio () {
+function ageQuestion () {
 let answer1 = prompt('Am I 20 years old?');
 if (answer1 === null || answer1 === '') {
   ageQuestion1();
