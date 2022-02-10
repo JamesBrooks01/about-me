@@ -47,7 +47,7 @@ else {
 }
 }
 
-function petnQuestio () {
+function petnQuestion () {
 let answer2 = prompt('Do I have 5 Pets?');
 if (answer2 === null || answer2 === '') {
   petnQuestion2();
