@@ -167,6 +167,7 @@ function movieQuestion() {
         alert('Correct, that is one of them');
         answeredCorrectly = true;
         counter++;
+        break;
       } else if (i === favoiteMovives.length) {
         alert('That isn\'t one of them, try again.');
       }
